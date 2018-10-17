@@ -63,7 +63,6 @@ public class ProjectsControllerTest {
     }
 
     @Test
-    @Ignore
     public void testCanGetAllProjects() throws Exception {
         Project project = new Project();
         project.setId(1L);
