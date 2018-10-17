@@ -2,7 +2,6 @@ package com.test.bank.tests.web;
 
 import com.test.bank.model.Project;
 import com.test.bank.service.ProjectsService;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
