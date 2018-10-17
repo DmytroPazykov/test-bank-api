@@ -14,10 +14,12 @@ cache:
   - $HOME/.gradle/caches/
   - $HOME/.gradle/wrapper/
 
-#services:
-#- docker
-#
-#before_install:
+services:
+- docker
+- mysql
+
+before_install:
+- mysql -e 'CREATE DATABASE IF NOT EXISTS test_bank;'
 #- docker pull mysql
 #- docker run --name mysql -e MYSQL_ROOT_PASSWORD=admin -p 3395:3395 -d mysql:5.6 -h 127.0.0.1
 #- docker exec -i mysql mysql -uroot -padmin  <<< "create database test_bank;"
