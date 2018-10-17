@@ -18,8 +18,8 @@ services:
 - docker
 
 before_install:
+- docker pull mysql
 - docker exec -i mysql mysql -uroot -padmin  <<< "create database test_bank;"
-- docker run -d -p 127.0.0.1:80:4567 gradle:jdk8
 
 install: true
 
