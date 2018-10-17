@@ -20,5 +20,6 @@ public class Project {
     @ApiModelProperty(hidden = true)
     Long id;
     String name;
+    @ApiModelProperty(hidden = true)
     boolean deleted;
 }
