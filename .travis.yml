@@ -19,7 +19,7 @@ services:
 
 before_install:
 - docker pull mysql
-- docker run --name mysql -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 -d mysql:5.6
+- docker run --name mysql -e MYSQL_ROOT_PASSWORD=admin -p 3395:3395 -d mysql:5.6
 - docker exec -i mysql mysql -uroot -padmin  <<< "create database test_bank;"
 
 install: true
