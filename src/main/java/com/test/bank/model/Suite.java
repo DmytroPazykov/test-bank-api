@@ -23,6 +23,5 @@ public class Suite {
     @ApiModelProperty(hidden = true)
     Long projectId;
     String name;
-    @ApiModelProperty(hidden = true)
     boolean deleted;
 }
